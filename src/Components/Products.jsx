@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import productList from "./ProductList";
 import { GoHeartFill } from "react-icons/go";
 import { HiShoppingBag } from "react-icons/hi2";
-import { Link } from "react-router";
 
-const Products = ({ searchTerm, addToCart, addToWishlist, wishlist }) => {
+
+const Products = ({ searchTerm, addToCart, addToWishlist, wishlist, onProductClick }) => {
   const categories = [
     "All",
     "Mens",
@@ -50,10 +50,12 @@ const Products = ({ searchTerm, addToCart, addToWishlist, wishlist }) => {
         </div>
 
         {/* product image */}
-        <div  className="w-full h-[30vh] cursor-pointer">
-          <Link  to={`/product/${product.id}`}>
+        <div  className="w-full h-[30vh] cursor-pointer"
+        onClick={() => onProductClick(product)}
+        >
+          
           <img src={product.image} alt={product.name} />
-          </Link>
+          
           
         </div>
 

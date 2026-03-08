@@ -25,7 +25,8 @@ const product = [
       image: pimage1,
       onSale: false,
       newArrival: true,
-      category: "Kids"
+      category: "Kids",
+      description: "The smooth touch of the best fabrics, modern design and comfortable fitting—this garment will give you a stylish look and all-day comfort, enhancing your confidence and beauty in every moment. Our company is always committed to providing quality products."
   },
   {
       id: 2,
@@ -35,7 +36,8 @@ const product = [
       image: pimage2,
       onSale: false,
       newArrival: false,
-      category: "Womens"
+      category: "Womens",
+      description: "The smooth touch of the best fabrics, modern design and comfortable fitting—this garment will give you a stylish look and all-day comfort, enhancing your confidence and beauty in every moment. Our company is always committed to providing quality products."
   },
   {
       id: 3,
@@ -45,7 +47,8 @@ const product = [
       image: pimage3,
       onSale: true,
       newArrival: false,
-      category: "Womens"
+      category: "Womens",
+      description: "The smooth touch of the best fabrics, modern design and comfortable fitting—this garment will give you a stylish look and all-day comfort, enhancing your confidence and beauty in every moment. Our company is always committed to providing quality products."
   },
   {
       id: 4,
@@ -55,7 +58,8 @@ const product = [
       image: pimage4,
       onSale: false,
       newArrival: true,
-      category: "Kids"
+      category: "Kids",
+      description: "The smooth touch of the best fabrics, modern design and comfortable fitting—this garment will give you a stylish look and all-day comfort, enhancing your confidence and beauty in every moment. Our company is always committed to providing quality products."
   },
   {
       id: 5,
@@ -65,7 +69,8 @@ const product = [
       image: pimage5,
       onSale: false,
       newArrival: false,
-      category: "Mens"
+      category: "Mens",
+      description: "The smooth touch of the best fabrics, modern design and comfortable fitting—this garment will give you a stylish look and all-day comfort, enhancing your confidence and beauty in every moment. Our company is always committed to providing quality products."
   },
   {
       id: 6,
@@ -75,7 +80,8 @@ const product = [
       image: pimage6,
       onSale: false,
       newArrival: true,
-      category: "Mens"
+      category: "Mens",
+      description: "The smooth touch of the best fabrics, modern design and comfortable fitting—this garment will give you a stylish look and all-day comfort, enhancing your confidence and beauty in every moment. Our company is always committed to providing quality products."
   },
   {
       id: 7,
@@ -85,7 +91,8 @@ const product = [
       image: pimage7,
       onSale: true,
       newArrival: false,
-      category: "Mens"
+      category: "Mens",
+      description: "The smooth touch of the best fabrics, modern design and comfortable fitting—this garment will give you a stylish look and all-day comfort, enhancing your confidence and beauty in every moment. Our company is always committed to providing quality products."
   },
   {
       id: 8,
@@ -95,7 +102,8 @@ const product = [
       image: pimage8,
       onSale: false,
       newArrival: false,
-      category: "Womens"
+      category: "Womens",
+      description: "The smooth touch of the best fabrics, modern design and comfortable fitting—this garment will give you a stylish look and all-day comfort, enhancing your confidence and beauty in every moment. Our company is always committed to providing quality products."
   },
   {
       id: 9,
@@ -105,7 +113,8 @@ const product = [
       image: pimage9,
       onSale: false,
       newArrival: false,
-      category: "Mens"
+      category: "Mens",
+      description: "The smooth touch of the best fabrics, modern design and comfortable fitting—this garment will give you a stylish look and all-day comfort, enhancing your confidence and beauty in every moment. Our company is always committed to providing quality products."
   },
   {
       id: 10,
@@ -115,7 +124,8 @@ const product = [
       image: pimage10,
       onSale: true,
       newArrival: false,
-      category: "Womens"
+      category: "Womens",
+      description: "The smooth touch of the best fabrics, modern design and comfortable fitting—this garment will give you a stylish look and all-day comfort, enhancing your confidence and beauty in every moment. Our company is always committed to providing quality products."
   },
   {
       id: 11,
@@ -125,7 +135,8 @@ const product = [
       image: pimage11,
       onSale: true,
       newArrival: false,
-      category: "Womens"
+      category: "Womens",
+      description: "The smooth touch of the best fabrics, modern design and comfortable fitting—this garment will give you a stylish look and all-day comfort, enhancing your confidence and beauty in every moment. Our company is always committed to providing quality products."
   },
   {
       id: 12,
@@ -133,9 +144,10 @@ const product = [
       price: 32,
       oldprice: 38,
       image: pimage12,
-      onSale: false,
-      newArrival: true,
-      category: "Kids"
+      onSale: true,
+      newArrival: false,
+      category: "Kids",
+      description: "The smooth touch of the best fabrics, modern design and comfortable fitting—this garment will give you a stylish look and all-day comfort, enhancing your confidence and beauty in every moment. Our company is always committed to providing quality products."
   },
   {
       id: 13,
@@ -145,7 +157,8 @@ const product = [
       image: pimage13,
       onSale: false,
       newArrival: true,
-      category: "Womens"
+      category: "Womens",
+      description: "The smooth touch of the best fabrics, modern design and comfortable fitting—this garment will give you a stylish look and all-day comfort, enhancing your confidence and beauty in every moment. Our company is always committed to providing quality products."
   },
   {
       id: 14,
@@ -155,7 +168,8 @@ const product = [
       image: pimage14,
       onSale: true,
       newArrival: false,
-      category: "Womens"
+      category: "Womens",
+      description: "The smooth touch of the best fabrics, modern design and comfortable fitting—this garment will give you a stylish look and all-day comfort, enhancing your confidence and beauty in every moment. Our company is always committed to providing quality products."
   },
   {
       id: 15,
@@ -165,7 +179,8 @@ const product = [
       image: pimage15,
       onSale: false,
       newArrival: false,
-      category: "Kids"
+      category: "Kids",
+      description: "The smooth touch of the best fabrics, modern design and comfortable fitting—this garment will give you a stylish look and all-day comfort, enhancing your confidence and beauty in every moment. Our company is always committed to providing quality products."
   },
 ]
 

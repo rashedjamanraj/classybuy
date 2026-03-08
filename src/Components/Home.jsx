@@ -7,7 +7,9 @@ import WishList from "./WishList";
 import product from './ProductList';
 import OrderSummary from "./OrderSummary";
 import OrderPlaced from "./OrderPlace";
-import ProductDetails from './ProductDetails';
+import ProductDetails from "./ProductDetails";
+import Footer from "./Footer";
+
 
 
 const Home = () => {
@@ -25,6 +27,8 @@ const Home = () => {
     const storeWishlist = localStorage.getItem('wishlist');
     return  storeWishlist ? JSON.parse(storeWishlist) : []
   });
+
+
 
   // Total Calculations
   const subtotal = cartList.reduce((acc, item) => acc + item.price * item.quantity, 0)
@@ -104,6 +108,21 @@ const Home = () => {
 
   }
 
+
+  // productDetail Function
+ const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const handleProductClick = (product) => {
+    setSelectedProduct(product); // image এ ক্লিক করলে product state এ সেট হবে
+  };
+
+  const handleBack = () => {
+    setSelectedProduct(null); // back করলে আবার Products এ যাবে
+  };
+  
+
+  
+
   // Wishlist Function
   const addToWishlist = (product) => {
     const isInWishlist = wishlist.some(item => item.id === product.id);
@@ -133,13 +152,23 @@ const Home = () => {
       
       <Hero />
 
-      <Products 
+      {selectedProduct ? (
+      <ProductDetails
+        product={selectedProduct}
+        addToCart={addToCart}
+        addToWishlist={addToWishlist}
+        handleBack={handleBack}
+      />
+    ) : (
+      <Products
         searchTerm={searchTerm}
         addToCart={addToCart}
         addToWishlist={addToWishlist}
-        wishlist={wishlist}   
-        
+        wishlist={wishlist}
+        onProductClick={handleProductClick} // image এ ক্লিক করলে ProductDetails এ যাবে
       />
+    )}
+    
 
     
       
@@ -184,9 +213,11 @@ const Home = () => {
         orderPlaced &&
         <OrderPlaced 
         setOrderPlaced={setOrderPlaced}
-        />
-        
+        />  
       }
+
+
+      <Footer />
     </div>
   );
 };

@@ -33,7 +33,7 @@ const WishList = ({ activePanel, handleclose, wishlist, addToCart, clearWishlist
                     <h4 className=" font-semibold text-zinc-800 text-lg">
                       {product.name}
                     </h4>
-                    <p className=" text-xs text-zinc-500">Added: {product.addDate}</p>
+                    <p className=" text-xs text-zinc-500">Add: {product.addDate}</p>
                   </div>
 
                   <div className="flex justify-between">
@@ -47,7 +47,7 @@ const WishList = ({ activePanel, handleclose, wishlist, addToCart, clearWishlist
                         $ {product.price.toFixed(2)}
                       </span>
                     </div>
-                    <button className=" flex bg-amber-600  items-center text-white active:bg-amber-700 px-3 rounded-full py-1 cursor-pointer" onClick={() => addToCart(product)}>
+                    <button className=" flex bg-amber-600 justify-center items-center mb-1 text-white active:bg-amber-700 px-3 rounded-full py-1 cursor-pointer" onClick={() => addToCart(product)}>
                       Add to Cart
                     </button>
                   </div>

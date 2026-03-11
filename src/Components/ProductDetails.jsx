@@ -6,22 +6,22 @@ const ProductDetails = ({ product, addToCart, addToWishlist, handleBack }) => {
   if (!product) return null;
 
   return (
-    <section className="flex justify-center items-center bg-black/80 fixed inset-0 z-40">
-      <div className="bg-white max-w-5xl w-full md:flex rounded-lg shadow-lg overflow-hidden">
+    <section className="flex justify-center mt-5 items-center bg-black/80 fixed inset-0 z-40">
+      <div className="bg-white max-w-5xl w-full  md:flex rounded-lg shadow-lg  overflow-hidden">
         
         {/* Left side - Image */}
         <div className="md:w-1/2 flex justify-center items-center bg-gray-100 p-6">
           <img
             src={product.image}
             alt={product.name}
-            className="w-full h-88 object-cover rounded-lg shadow-md"
+            className="w-full h-75 md:h-110 object-cover rounded-lg shadow-md transform hover:scale-103 transition-transform duration-200 overflow-hidden mt-10"
           />
         </div>
 
         {/* Right side - Info */}
         <div className="md:w-1/2 p-8 flex flex-col justify-between">
           <div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            <h2 className="text-3xl font-bold text-gray-800 mb-2">
               {product.name}
             </h2>
             <p className="text-2xl text-amber-600 font-bold mb-2">
@@ -43,14 +43,14 @@ const ProductDetails = ({ product, addToCart, addToWishlist, handleBack }) => {
           {/* Buttons */}
           <div className="flex gap-4">
             <button
-              className="bg-red-600 flex-1 py-3 text-white rounded-lg cursor-pointer flex items-center justify-center gap-2 hover:bg-red-700"
+              className="bg-red-600 flex-1 py-3 text-white rounded-lg cursor-pointer flex items-center justify-center gap-2 active:bg-red-700"
               onClick={() => addToWishlist(product)}
             >
               <GoHeartFill className=" text-[1.4rem]"/> Add to Wishlist
             </button>
 
             <button
-              className="bg-amber-600 flex-1 py-3 text-white rounded-lg cursor-pointer flex items-center justify-center gap-2 hover:bg-amber-700"
+              className="bg-amber-600 flex-1 py-3 text-white rounded-lg cursor-pointer flex items-center justify-center gap-2 active:bg-amber-700"
               onClick={() => addToCart(product)}
             >
               <HiShoppingBag className=" text-[1.4rem]"/> Add To Cart
@@ -61,7 +61,7 @@ const ProductDetails = ({ product, addToCart, addToWishlist, handleBack }) => {
           <div className="mt-6 text-center">
             <button
               onClick={handleBack}
-              className="  text-blue-600 underline rounded-lg text-xl font-bold cursor-pointer hover:text-blue-800"
+              className="  text-blue-600 underline rounded-lg text-xl font-bold cursor-pointer hover:text-blue-800 mb-20"
             >
               ← Back to Products
             </button>

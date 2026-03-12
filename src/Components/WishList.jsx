@@ -2,6 +2,19 @@ import React from "react";
 
 const WishList = ({ activePanel, handleclose, wishlist, addToCart, clearWishlist }) => {
   return (
+    
+    <>
+
+
+    {/* overlay */}
+    {activePanel === "wishlist" && (
+        <div 
+          className="fixed inset-0 z-30" 
+          onClick={handleclose} 
+        />
+      )}
+
+   {/* wishlist Panel */}
     <div
       className={` flex flex-col justify-between gap-5 bg-zinc-100 fixed right-0 top-0 bottom-0 left-auto z-40 w-100 border-l border-zinc-300 transform transition-transform duration-300 ${activePanel === "wishlist" ? "translate-x-0" : "translate-x-full"} `}
     >
@@ -74,6 +87,7 @@ const WishList = ({ activePanel, handleclose, wishlist, addToCart, clearWishlist
         </button>
       </div>
     </div>
+  </>
   );
 };
 

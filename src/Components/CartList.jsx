@@ -15,7 +15,7 @@ const CartList = ({ activePanel, handleclose, cartList, removeItem, quantityIncr
     
     {/* cart panel */}
     <div
-      className={` flex flex-col justify-between gap-5 bg-zinc-100 fixed right-0 top-0 bottom-0 left-auto z-40 w-100 border-l border-zinc-300 transform transition-transform duration-300 ${activePanel === "cartlist" ? "translate-x-0" : "translate-x-full"} `}
+      className={` flex flex-col justify-between gap-5 bg-zinc-100 fixed right-0 top-0 bottom-0 left-auto z-40 w-full md:w-100 border-l border-zinc-300 transform transition-transform duration-300 ${activePanel === "cartlist" ? "translate-x-0" : "translate-x-full"} `}
     >
       {/* heading */}
       <div className="px-10">

@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom'
 import logoClassyBuy from "../assets/logo-classybuybest.png";
 import paymentcart from "../assets/paymentCard.png";
 
-
+  
 const Footer = () => {
   return (
     <footer className=' bg-gray-100 text-black pt-15 mt-5 pb-5'>

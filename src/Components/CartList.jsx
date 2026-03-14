@@ -39,7 +39,7 @@ const CartList = ({ activePanel, handleclose, cartList, removeItem, quantityIncr
                 <img src={product.image} className="w-full h-full " />
               </div>
 
-              {/* product detail       */}
+              {/* product details */}
               <div className=" flex-1">
                 <div className="flex justify-between">
                   <h4 className=" font-semibold text-zinc-800 text-lg">

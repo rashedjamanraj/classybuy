@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className=' bg-gray-100 text-black pt-15 mt-5 pb-5'>
       <div className='max-w-screen-2x1 container mx-auto px-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 '>
 
-        {/* logo and deatails*/}
+        {/* logo and deatials*/}
         <div className=' md:col-span-2'>
           <div className='  py-2 '><Link to="/"><img src={logoClassyBuy} alt="" className="py-3 h-[13vh] w-[32vh]"/></Link></div>
 

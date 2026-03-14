@@ -9,7 +9,6 @@ const OrderSummary = ({cartList, subtotal, shippingFee, orderTotal, setOrderPlac
   }
 
 
-
   return (
     <section className=' flex justify-center items-center bg-black/95 fixed inset-0 z-40'>
       <div className=' bg-zinc-100 p-8 w-150 rounded-lg border-2 border-zinc-300'>

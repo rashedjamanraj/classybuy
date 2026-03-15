@@ -64,7 +64,7 @@ import { HiShoppingBag } from "react-icons/hi2";
         className="flex justify-center items-center  w-7 h-7 rounded-full bg-rose-700 text-white cursor-pointer -ml-4 "
         onClick={() => setMobileSearchOpen(false)}
       >
-        <HiX className="text-xl" />
+        <HiX className="text-lg" />
       </button>
     </div>
   )}
@@ -85,8 +85,8 @@ import { HiShoppingBag } from "react-icons/hi2";
               onFocus={handleScroll}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
-            <button className="flex justify-center items-center w-8 h-8 rounded-full bg-rose-700 text-white cursor-pointer mt-0  md:mt-2.5 lg:mt-0">
-              <IoSearch className="text-2xl" />
+            <button className="flex justify-center items-center w-7 h-7 rounded-full bg-rose-700 text-white cursor-pointer mt-0  md:mt-2.5 lg:mt-0">
+              <IoSearch className="text-lg" />
             </button>
           </div>
 

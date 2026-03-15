@@ -57,11 +57,11 @@ import { HiShoppingBag } from "react-icons/hi2";
         type="text"
         placeholder="search..."
         autoComplete="off"
-        className="bg-white h-[5vh] pl-2 flex-1 focus:outline-none rounded-full text-sm"
+        className="bg-transparent h-[5vh] p-2 focus:outline-none rounded-full text-sm"
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       <button
-        className="flex justify-center items-center  w-7 h-7 rounded-full bg-rose-700 text-white cursor-pointer -ml-4 "
+        className="flex justify-center items-center  w-7 h-7 rounded-full bg-rose-700 text-white cursor-pointer -ml-8 "
         onClick={() => setMobileSearchOpen(false)}
       >
         <HiX className="text-lg" />

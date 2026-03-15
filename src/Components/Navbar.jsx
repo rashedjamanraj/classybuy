@@ -52,16 +52,16 @@ import { HiShoppingBag } from "react-icons/hi2";
       <IoSearch className="text-2xl" />
     </button>
   ) : (
-    <div className="flex items-center p-1 rounded-full border-2 border-gray-500 max-w-50 w-full">
+    <div className="flex items-center justify-center p-1 rounded-full border-2 border-gray-500 max-w-48 w-full">
       <input
         type="text"
         placeholder="search..."
         autoComplete="off"
-        className="bg-white h-[5vh] pl-2 flex-1 focus:outline-none rounded-lg text-sm"
+        className="bg-white h-[5vh] pl-2 flex-1 focus:outline-none rounded-full text-sm"
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       <button
-        className="flex justify-center items-center w-7 h-7 rounded-full bg-rose-700 text-white cursor-pointer -ml-6"
+        className="flex justify-center items-center  w-7 h-7 rounded-full bg-rose-700 text-white cursor-pointer -ml-4 "
         onClick={() => setMobileSearchOpen(false)}
       >
         <HiX className="text-xl" />
@@ -81,12 +81,12 @@ import { HiShoppingBag } from "react-icons/hi2";
               id="search"
               placeholder="search..."
               autoComplete="off"
-              className="bg-white h-[5vh] pl-3 flex-1 focus:outline-none rounded-lg text-sm"
+              className="bg-white h-[5vh] pl-3 flex-1 focus:outline-none rounded-full text-sm"
               onFocus={handleScroll}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
-            <button className="flex justify-center items-center w-7 h-7 rounded-full bg-rose-700 text-white cursor-pointer">
-              <IoSearch className="text-lg" />
+            <button className="flex justify-center items-center w-8 h-8 rounded-full bg-rose-700 text-white cursor-pointer mt-0  md:mt-2.5 lg:mt-0">
+              <IoSearch className="text-2xl" />
             </button>
           </div>
 
